@@ -1,0 +1,27 @@
+// 所有布局单位都使用rem即可
+@import "mixin";
+
+html {
+	// 750px = 100vw; 1px = 0.13333vw，再乘100
+	font-size: 13.33333vw;
+}
+
+// 用于兼容ipad，显示过大的问题，vw太大
+ @media only screen and (min-width: 560px) {
+ 	// pc，淘宝的边界定义是54px，应该是有些根据的
+	html {
+		font-size: 54px;
+	}
+}
+
+body {
+	font-size: px2rem(24px);
+}
+
+#app {
+	.line {
+		width: px2rem(375px);
+		height: px2rem(375px);
+		background-color: red;
+	}
+}

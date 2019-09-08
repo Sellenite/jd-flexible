@@ -1,0 +1,12 @@
+html {
+  font-size: 13.33333vw; }
+
+body {
+  font-size: 0.24rem; }
+
+#app .line {
+  width: 3.75rem;
+  height: 3.75rem;
+  background-color: red; }
+
+/*# sourceMappingURL=index.css.map */
