@@ -6,7 +6,7 @@ html {
 	font-size: 13.33333vw;
 }
 
-// 用于兼容ipad，显示过大的问题，vw太大
+// 用于兼容ipad，显示过大的问题，由于平板宽度大，导致可视区域变小，可按情况使用
  @media only screen and (min-width: 560px) {
  	// pc，淘宝的边界定义是54px，应该是有些根据的
 	html {
@@ -20,7 +20,7 @@ body {
 
 #app {
 	.line {
-		width: px2rem(375px);
+		width: calc(100% - #{px2rem(375px)});
 		height: px2rem(375px);
 		background-color: red;
 	}

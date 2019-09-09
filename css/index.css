@@ -1,11 +1,14 @@
 html {
   font-size: 13.33333vw; }
 
+@media only screen and (min-width: 560px) {
+  html {
+    font-size: 54px; } }
 body {
   font-size: 0.24rem; }
 
 #app .line {
-  width: 3.75rem;
+  width: calc(100% - 3.75rem);
   height: 3.75rem;
   background-color: red; }
 
